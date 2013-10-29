@@ -1,7 +1,9 @@
-var express_module = require('express')
+var http_module = require('http')
 
-var application = express_module.createServer();
-app.get('/', function(request, result) {
-            res.send('hello world');
-            });
-app.listen(9001);
+var server = http_module.createServer();
+var requestHandler = function(request, result) {
+  result.writeHead(200, {});
+  result.end('Hello World!');
+};
+server.on('request', requestHandler); 
+server.listen(9001);
