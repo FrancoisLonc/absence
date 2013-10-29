@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <title>Absences COGE</title> 
+    <meta charset="UTF-8"/>
+    <meta name="application-name" content="Absence"/>
+    <meta name="author" content="François Lonc"/>
+    <meta name="description" content="Pour vérifier les absences"/>
+    <base href="file:///home/franois/Projects/Absence/"/>
+  </head>
+  <body>
+    <form method="post" action="index.html">
+      <ul>
+        <li> Adeline: 
+          <input type="radio" name="adeline_status" value="present" id="present" checked="checked"/>
+          <label for="present">présent</label>
+          <input type="radio" name="adeline_status" value="absent" id="absent"/>
+          <label for="absent">absent</label>
+        </li>
+        <li> Bertrand: 
+          <input type="radio" name="bertrand_status" value="present" id="present" checked="checked"/>
+          <label for="present">présent</label>
+          <input type="radio" name="bertrand_status" value="absent" id="absent"/>
+          <label for="absent">absent</label>
+        </li>
+      </ul>
+      <input type="submit"/>
+    </form>
+  </body>
+</html>
+
